@@ -1,8 +1,5 @@
 import styles from 'styles/hero.module.css'
-import Image from 'next/image'
-import cube from 'images/cube.jpg'
-import pickleball from 'images/image_pickleball.jpg'
-import homeball from 'images/home1.webp'
+
 
 export default function Hero( {title, subtitle, sentence, isHomePage = false} ){
     return (

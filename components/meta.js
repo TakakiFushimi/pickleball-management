@@ -6,7 +6,7 @@ import { siteMeta } from 'lib/constants'
 const {siteTitle, siteDesc, siteUrl, siteLocal, siteType, siteIcon } = siteMeta
 
 // 汎用OGP画像
-import siteImg from 'images/ogp.jpg'
+import siteImg from 'images/icon_logo3_green_small.png'
 
 export default function Meta({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH }) {
     // ページのタイトル
