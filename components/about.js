@@ -1,4 +1,4 @@
-import styles from 'styles/hero.module.css'
+import styles from 'styles/about.module.css'
 
 
 export default function Hero( {title, subtitle, sentence, isHomePage = false} ){

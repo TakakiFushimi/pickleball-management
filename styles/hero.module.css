@@ -4,7 +4,7 @@
 
 .flexHomeContainer {
     composes: sideBySideCenter from 'styles/utils.module.css';
-    background: linear-gradient(rgba(104, 206, 193, 0.2), rgba(1, 72, 66, 0.2)),url('../images/home1.jpg');
+    background: linear-gradient(rgba(104, 206, 193, 0.2), rgba(1, 72, 66, 0.2)),url('../images/home1.webp');
     /*background-image: url('../images/home1.webp');*/
     background-repeat: no-repeat;
     background-position:50% 50%;
@@ -18,12 +18,16 @@
     padding-left: calc(var(--display) * 0.2);
 }
 
-.title {
+.Hometitle {
     font-size: var(--display);
     font-weight: 900;
     letter-spacing: 0.15em;
 }
-
+.title {
+    font-size: var(--heading1);
+    font-weight: 900;
+    letter-spacing: 0.15em;
+}
 .subtitle {
     font-size: var(--small-heading2);
 }

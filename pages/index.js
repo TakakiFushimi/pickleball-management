@@ -2,10 +2,10 @@ import { getAllPosts } from 'lib/api'
 import Meta from 'components/meta'
 import Container from 'components/container'
 import Hero from 'components/hero'
-import NewsList from 'components/newslist'
 import Posts from 'components/posts'
 import Pagination from 'components/pagination'
 import { getPlaiceholder } from 'plaiceholder'
+
 //import { posts as localPosts } from 'pages/data/posts' // ローカルのpostsデータをインポート
 
 // ローカルの代替アイキャッチ画像
@@ -18,15 +18,15 @@ export default function Home({ posts }) {
       <Meta />
 
       <Hero 
-        title="Pickle" 
-        subtitle="Welcome to Pickleball Club" 
-        sentence="Our mission is to promote the sport of pickleball by increasing its accessibility and awareness. We aim to establish more courts, organize community events, and provide resources for players of all ages and skill levels to improve their game and enjoy the benefits of this fast-growing sport. Through partnerships with local schools and community centers, we strive to introduce pickleball to a wider audience and foster a community that values health, wellness, and social interaction." 
+        title="Pickleball Club" 
+        subtitle="楽しく交流できるピックルボールクラブ！初心者歓迎！体験レッスン受付中！" 
+        sentence="私たちの使命は、ピックルボールの普及と認知度の向上に努めることです。より多くのコートを設置し、コミュニティイベントを開催することで、あらゆる年齢や技術レベルのプレーヤーが楽しみ、上達できる環境を提供いたします。" 
         isHomePage
       />
 
-      <NewsList posts={posts} />
+      
       <Posts posts={posts} />
-      <Pagination nextUrl="/blog" nextText="More Posts" />
+      <Pagination nextUrl="/event" nextText="More Posts" />
 
     </Container>
   )

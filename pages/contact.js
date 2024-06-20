@@ -6,7 +6,7 @@ import Contact from 'components/contact';
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-column'
 import Accordion from 'components/accordion'
 import Image from 'next/image'
-import eyecatch from 'images/image_play2.jpeg'
+import contact from 'images/icon_logo3_green_small.png'
 
 
 export default function Form() {
@@ -15,23 +15,13 @@ export default function Form() {
             <Meta
              pageTitle="contact"
              pageDesc="About development activities"
-             pageImg={eyecatch.src}
-             pageImgW={eyecatch.width}
-             pageImgH={eyecatch.height}
+             pageImg={contact.src}
+             pageImgW={contact.width}
+             pageImgH={contact.height}
             />
 
             <Hero title="Contact" subtitle="Get in Touch with Us" />
             
-            <figure>
-                <Image
-                src={eyecatch}
-                alt=""
-                layout="responsive"
-                sizes="(min-width: 1152px) 1152px, 100vw"
-                priority
-                placeholder="blur"
-                />
-            </figure>
             <TwoColumn>
                 <TwoColumnMain>
                 <PostBody>

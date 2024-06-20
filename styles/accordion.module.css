@@ -1,6 +1,6 @@
 .open,
 .close {
-  border: solid 1px var(--gray-25);
+  border: solid 1px var(--white);
 }
 
 /* 見出し */
@@ -23,7 +23,7 @@
 
 /* 見出しのアイコン */
 .icon {
-  color: var(--gray-25);
+  color: var(--white);
   font-size: 1.25em;
   transition: transform 0.5s;
 }

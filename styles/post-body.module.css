@@ -2,7 +2,11 @@
     margin-top: var(--stack-space, 1.5rem);
 }
 
-.stack h2,
+
+.stack h2 {
+    --stack-space:3em;
+    border-bottom: 1px solid var(--white);
+}
 .stack h3 {
     --stack-space:2em;
 }
@@ -12,7 +16,13 @@
     --stack-space:0.8em;
 }
 
-.stack p {
+.stack span {
+    line-height: 1.8;
+    color: var(--accent);
+    border-bottom: 1px solid var(--white);
+    
+}
+.stack p{
     line-height: 1.8;
 }
 
@@ -20,3 +30,11 @@
     padding: revert;
     list-style: revert;
 }
+
+
+/* ホバー */
+@media (hover: hover) {
+    .stack span:hover {
+      color: var(--orange);
+    }
+  }
