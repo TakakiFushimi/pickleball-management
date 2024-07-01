@@ -1,5 +1,5 @@
 /* デスクトップ */
-@media (min-width: 768px) {
+@media (min-width: 1250px) {
     .btn {
         display:none;
     }
@@ -10,7 +10,7 @@
 }
 
 /* モバイル */
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
     /* ボタン */
     .btn {
         all: unset;

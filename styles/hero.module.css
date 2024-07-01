@@ -10,16 +10,17 @@
     background-position:50% 50%;
     background-size: cover;
     width:100%;
-
+    height: 100%;
 }
 .text {
+    max-width: 97%; /* コンテナ内での最大幅を指定 */
     padding-top: calc(var(--display) * 0.7);
     padding-bottom: calc(var(--display) * 0.2);
     padding-left: calc(var(--display) * 0.2);
 }
 
 .Hometitle {
-    font-size: var(--display);
+    font-size: calc(var(--display) * 0.85);
     font-weight: 900;
     letter-spacing: 0.15em;
 }

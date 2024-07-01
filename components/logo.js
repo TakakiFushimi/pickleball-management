@@ -6,7 +6,7 @@ import logo from 'images/logo.svg'
 export default function Logo({ boxOn = false }) {
     return (
         <Link href="/" className={boxOn ? styles.box2 : styles.basic}>
-            <Image src={logo} alt="logo" layout="responsive" />
+            <Image src={logo} className={styles.logo} alt="logo" layout="intrinsic" />
         </Link>
     )
 }
