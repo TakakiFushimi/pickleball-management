@@ -1,50 +1,52 @@
 .basic {
     width: 350px;
-    padding: 0em 4em 0em 0em;
+    padding: 0em 0em 0em 0em;
     font-size: var(--small-heading2);
 }
-@media (max-width: 1152px) {
+
+.box2 {
+    width: 450px;
+    padding: 1em 2em 1em 0em;
+    text-align: left;
+    font-size: var(--small-heading2);
+}
+
+@media (max-width: 768px) {
     .basic {
         width: 350px;
         text-align: center;
         padding: 0em 0em 0em 0em;
         font-size: var(--small-heading2);
+        max-width: 220px; /* 最大幅を指定 */
+        max-height: 90px; /* 最大高さを指定 */
+        width: auto; /* アスペクト比を保つ */
+        height: auto; /* アスペクト比を保つ */
     }
-}
-.box {
-    composes: basic;
-    display: inline-block;
-    padding: 1em 2em;
-    /*background-color: var(--gray-75);*/
-    color: var(--white);
-    font-size: var(--small-heading2);
-}
-.box2 {
-    width: 450px;
-    padding: 1em 0em 1em 0em;
-    text-align: left;
-    font-size: var(--small-heading2);
-}
-@media (max-width: 1152px) {
     .box2 {
         width: 350px;
-        padding: 1em 0em 1em 0em;
+        padding: 1em 2em 1em 0em;
         text-align: left;
         font-size: var(--small-heading2);
+        max-width: 220px; /* 最大幅を指定 */
+        max-height: 90px; /* 最大高さを指定 */
+        width: auto; /* アスペクト比を保つ */
+        height: auto; /* アスペクト比を保つ */
     }
 }
 
-.logo {
-    max-width: 280px; /* 最大幅を指定 */
-    max-height: 90px; /* 最大高さを指定 */
-    width: auto; /* アスペクト比を保つ */
-    height: auto; /* アスペクト比を保つ */
-}
+
 
 /*
 .basic {
     font-size: var(--heading2);
     font-weight: 700;
     letter-spacing: 0.15em;
+}
+.box {
+    composes: basic;
+    display: inline-block;
+    padding: 1em 2em;
+    color: var(--white);
+    font-size: var(--small-heading2);
 }
 */
