@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from 'styles/logo.module.css'
 import Image from 'next/image'
-import logo from 'images/logo.svg'
+import logo from 'images/logo2.svg'
 
 export default function Logo({ boxOn = false }) {
     return (
