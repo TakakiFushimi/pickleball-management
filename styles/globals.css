@@ -8,7 +8,8 @@
   --orange: #fee495;
   --black: #222222;
   --accent: #FFBF00;
-  --green: #72fdfd;
+  --green: #141b1b;
+  --temgreen: #72fdfd;
 
   /* タイポグラフィ（フォントサイズ） */
   --body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem); /* 16-18px */

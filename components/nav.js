@@ -33,21 +33,21 @@ export default function Nav() {
             <ul className={styles.list}>
                 <li>
                     <Link href="/" onClick={closeNav}>
-                        ホーム
+                        HOME
                     </Link>
                 </li>
                 <li>
                     <Link href="/what-is-pickleball" onClick={closeNav}>
-                        ピックルボールとは
+                        サービス
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/about-us" onClick={closeNav}>
+                        私たちについて
                     </Link>
                 </li>
                 <li>
                     <Link href="https://reserva.be/pickle" onClick={closeNav}>
-                        レッスンのご案内
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/event" onClick={closeNav}>
                         イベント
                     </Link>
                 </li>
