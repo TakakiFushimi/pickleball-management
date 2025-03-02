@@ -17,22 +17,24 @@
   .serviceCard {
     padding: 24px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
   }
   
   /* 個人向けサービス */
   .individualService {
-    background-color: #d0ebff;
+    
   }
   
   /* 法人向けサービス */
   .businessService {
-    background-color: #d3f9d8;
+    
   }
   
   /* サービスタイトル */
   .serviceTitle {
+    color: #fff;
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 12px;
@@ -41,7 +43,7 @@
   /* サービス説明 */
   .serviceDescription {
     font-size: 1rem;
-    color: #555;
+    color: #ddd;
     margin-bottom: 16px;
   }
   
@@ -55,7 +57,8 @@
   
   /* 参加の流れセクション */
   .flowSection {
-    background-color: #f8f9fa;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 40px 20px;
     border-radius: 12px;
     margin: 40px 0;
@@ -94,3 +97,16 @@
     margin-bottom: 8px;
   }
   
+  .serviceButton {
+    background: #008080;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .serviceButton:hover {
+    background: #00a3a3;
+  }

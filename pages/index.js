@@ -25,6 +25,18 @@ export default function Home({ posts }) {
         isHomePage
       />
 
+      {/* 私たちについて */}
+      <section className={styles.flowSection}>
+        <h2 className={styles.flowTitle}>私たちについて</h2>
+        <p>
+          私たちは、誰もが気軽に楽しめるピックルボールを通じて、人々のライフスタイルをより豊かにすることを目指しています。
+          大会やイベントを開催し、スポーツを通じた交流の場を提供することで、同僚や仲間とのコミュニケーションを深め、より良い関係を築く機会を創出します。
+          初心者でも気軽に楽しめる手軽さ、適度な運動量、そしてチームワークの向上につながる要素を活かし、スポーツを通じた新たなつながりを生み出していきます。
+          シンプルなルールで幅広い世代が楽しめるピックルボールは、ラケットスポーツの要素を持ちつつも適度な運動量で健康的なライフスタイルを支援します。
+          私たちは、ピックルボールを通じて多くの人々に楽しく健康的なライフスタイルを提供し、より豊かな社会の実現を目指します。
+        </p>
+      </section>
+
       {/* サービス紹介 */}
       <section className={styles.serviceSection}>
         {/* 個人向けサービス */}
@@ -54,7 +66,8 @@ export default function Home({ posts }) {
         </div>
       </section>
 
-      {/* 参加の流れ */}
+      {/*
+      参加の流れ 
       <section className={styles.flowSection}>
         <h2 className={styles.flowTitle}>ご利用の流れ</h2>
         <div className={styles.flowGrid}>
@@ -71,14 +84,17 @@ export default function Home({ posts }) {
             <p>お客様のニーズに合わせたプランでご参加いただけます。</p>
           </div>
         </div>
-      </section>
+      </section>*/}
 
-      <Posts posts={posts} />
-      <Pagination nextUrl="/event" nextText="More Posts" />
+      {/* <Posts posts={posts} />
+      <Pagination nextUrl="/event" nextText="More Posts" />*/}
     </Container>
   )
 }
-
+/*
+   複数行コメント
+   囲まれている範囲がコードとして評価されない
+ */
 export async function getStaticProps() {
   const posts = await getAllPosts(4)
 

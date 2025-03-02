@@ -33,7 +33,7 @@ export default function Nav() {
             <ul className={styles.list}>
                 <li>
                     <Link href="/" onClick={closeNav}>
-                        HOME
+                        ホーム
                     </Link>
                 </li>
                 <li>
