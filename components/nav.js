@@ -47,16 +47,25 @@ export default function Nav() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="https://reserva.be/pickle" onClick={closeNav}>
-                        イベント
+                    <Link href="what-is-pickleball" onClick={closeNav}>
+                        ピックルボールとは
                     </Link>
                 </li>
-                <li>
-                    <Link href="/contact" onClick={closeNav}>
-                        お問い合わせ
-                    </Link>
-                </li>
+                
             </ul>
         </nav>
     )
 }
+
+/*
+<li>
+    <Link href="https://reserva.be/pickle" onClick={closeNav}>
+        イベント
+    </Link>
+</li>
+<li>
+    <Link href="/contact" onClick={closeNav}>
+        お問い合わせ
+    </Link>
+</li>
+*/

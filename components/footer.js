@@ -2,7 +2,7 @@ import Container from 'components/container'
 import Logo from 'components/logo'
 import styles from 'styles/footer.module.css'
 import Social from 'components/social'
-
+import Contact from 'components/contact';
 
 export default function Fotter(){
     return (
@@ -10,7 +10,8 @@ export default function Fotter(){
         <Container>
             <div className={styles.flexContainer}>
                 <Logo />
-                <Social />
+                
+                <Contact />
             </div>
         </Container>
     </footer>

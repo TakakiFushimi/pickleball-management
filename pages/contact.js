@@ -13,56 +13,50 @@ export default function Form() {
     return (
         <Container>
             <Meta
-             pageTitle="contact"
-             pageDesc="About development activities"
+             pageTitle="お問い合わせ"
+             pageDesc="お問い合わせ方法について"
              pageImg={contact.src}
              pageImgW={contact.width}
              pageImgH={contact.height}
             />
 
-            <Hero title="Contact" subtitle="Get in Touch with Us" />
+            <Hero title="お問い合わせ" subtitle="お気軽にご連絡ください" />
             
-            <TwoColumn>
-                <TwoColumnMain>
-                <PostBody>
-                    <p>
-                    Cube's specialty is manufacturing, and we continue to propose creative solutions that connect with society and the environment by combining various technologies, from 3-D to 2-D modeling, programming and design.
-                    </p>
-                    <h2>What we aim for in manufacturing</h2>
-                    <p>
-                    In manufacturing, I am in charge of a wide range of things from data analysis to creativity. My goal is to realize proposals that match the user's needs while incorporating new things. There are many many developments and offerings, but I am particularly focused on working to refine them.
-                    </p>
-                    <p>
-                    We do not simply put things into shape, but we create things while valuing the process of making them and why we did it that way. Each time, we face and create “objects” with a problem-solving theme, and by receiving feedback, we are able to put into words the confusion within ourselves and answer the “question.
-                    </p>
-                    <h3>Challenge to something new</h3>
-                    <p>
-                    By creating something different from what I have done before, I become attached to it. So I try to incorporate what interests me, even if it is a small thing, so that I can create something good. I would like to continue making things that create new things from small hints.
-                    </p>
-
-                    <h2>FAQ</h2>
-                    <Accordion heading="About the Point of Programming">
-                    <p>
-                    The point of programming is to create what you want to create. We come up with an idea from something fun, set a goal and a goal, and then create a program while setting up various tasks to get there.
-                    </p>
-                    </Accordion>
-                    <Accordion heading="About Decoding Ancient Languages">
-                    <p>
-                    The only thing needed to decipher an ancient language is the written word itself. Ancient worldviews and ways of thinking. Only by reading them can we understand the ancient worldview.
-                    </p>
-                    </Accordion>
-                    <Accordion heading="Utilization of Public Repositories">
-                    <p>
-                    Utilizing the public repository allows developers to access and use the tasks of related projects from anywhere in the world.
-                    </p>
-                    </Accordion>
-                </PostBody>
-                </TwoColumnMain>
+            <div className="max-w-2xl mx-auto bg-white p-8 shadow-lg rounded-lg text-center">
+                <h2 className="text-2xl font-semibold mb-6">お問い合わせ方法</h2>
+                <p className="text-gray-700 mb-4">お問い合わせは以下の方法で受け付けております。</p>
                 
-                <TwoColumnSidebar>
-                <Contact />
-                </TwoColumnSidebar>
-            </TwoColumn>
+                <div className="space-y-4">
+                    <div className="flex items-center justify-center space-x-2">
+                        <img src="/instagram-logo.png" alt="Instagram" className="w-6 h-6" />
+                        <a href="https://www.instagram.com/your_instagram" target="_blank" rel="noopener noreferrer" className="text-blue-500 font-semibold hover:underline">Instagramでお問い合わせ</a>
+                    </div>
+                    
+                    <div className="flex items-center justify-center space-x-2">
+                        <img src="/gmail-logo.png" alt="Gmail" className="w-6 h-6" />
+                        <a href="mailto:your_email@gmail.com" className="text-blue-500 font-semibold hover:underline">Gmailでお問い合わせ</a>
+                    </div>
+                </div>
+            </div>
         </Container>
-        )
+    )
 }
+
+/*
+<h2>よくある質問（FAQ）</h2>
+                    <Accordion heading="ピックルボールの魅力について">
+                    <p>
+                    ピックルボールは、シンプルなルールで誰でも気軽に楽しめるスポーツです。初心者でもすぐにプレイでき、適度な運動量で健康維持にも最適です。
+                    </p>
+                    </Accordion>
+                    <Accordion heading="初心者向けレッスンについて">
+                    <p>
+                    初心者向けレッスンでは、基本ルールやラケットの扱い方から丁寧に指導します。体験レッスンもご用意していますので、ぜひお気軽にご参加ください。
+                    </p>
+                    </Accordion>
+                    <Accordion heading="企業向けピックルボールの活用">
+                    <p>
+                    企業研修やチームビルディングイベントとしてピックルボールを活用することで、従業員同士のコミュニケーション向上や健康促進に貢献します。
+                    </p>
+                    </Accordion>
+*/

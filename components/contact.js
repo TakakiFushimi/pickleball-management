@@ -5,8 +5,7 @@ export default function Contact() {
     return (
         <div className={styles.stack}>
             <h3 className={styles.headding}>Contact</h3>
-            <Social iconSize="30px" />
-            <address>pickleballclub@gmail.com</address>
+            <Social  iconSize="40px"/>
         </div>
     )
 }
