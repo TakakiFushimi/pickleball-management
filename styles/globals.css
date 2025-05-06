@@ -5,9 +5,12 @@
   --gray-25: #aaaaaa;
   --gray-50: #707070;
   --gray-75: #444444;
-  --orange: #fee495;
+  --orange: #ffeaac;
   --black: #222222;
-  --accent: #FFBF00;
+  --base:#fffbec;
+  --accent:#b4bc4e;
+  --text:#463e39;
+  --accentsub: #FFBF00;
   --green: #141b1b;
   --temgreen: #72fdfd;
 
@@ -35,10 +38,10 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   font-size: var(--body);
-  color: var(--white);
-  background: linear-gradient(250deg, #449d9d,#002c2c);
+  color: var(--text);
+  background: var(--base);
 }
-
+/*linear-gradient(250deg, #449d9d,#002c2c);*/
 h1 {
   font-size: var(--heading1);
 }

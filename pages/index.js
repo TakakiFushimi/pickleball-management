@@ -19,8 +19,8 @@ export default function Home({ posts }) {
       <Meta />
 
       <Hero 
-        title="Pickleball Club" 
-        subtitle="楽しく交流できるピックルボールクラブ！初心者歓迎！体験レッスン受付中！" 
+        title="Tokyo Pickleball Management" 
+        subtitle="　" 
         sentence="私たちの使命は、ピックルボールの普及と認知度の向上に努めることです。より多くのコートを設置し、コミュニティイベントを開催することで、あらゆる年齢や技術レベルのプレーヤーが楽しみ、上達できる環境を提供いたします。" 
         isHomePage
       />
@@ -31,9 +31,26 @@ export default function Home({ posts }) {
         <p>
           私たちは、誰もが気軽に楽しめるピックルボールを通じて、人々のライフスタイルをより豊かにすることを目指しています。
           大会やイベントを開催し、スポーツを通じた交流の場を提供することで、同僚や仲間とのコミュニケーションを深め、より良い関係を築く機会を創出します。
-          初心者でも気軽に楽しめる手軽さ、適度な運動量、そしてチームワークの向上につながる要素を活かし、スポーツを通じた新たなつながりを生み出していきます。
-          シンプルなルールで幅広い世代が楽しめるピックルボールは、ラケットスポーツの要素を持ちつつも適度な運動量で健康的なライフスタイルを支援します。
-          私たちは、ピックルボールを通じて多くの人々に楽しく健康的なライフスタイルを提供し、より豊かな社会の実現を目指します。
+        </p>
+        <p className={styles.detailLinkWrapper}>
+        <a href="/about-us" className={styles.detailLink}>詳細はこちら</a> 
+        </p>
+
+        
+      </section>
+
+      {/* ピックるボールとは */}
+      <section className={styles.flowSection}>
+        <h2 className={styles.flowTitle}>ピックルボールとは？</h2>
+        <p>
+        ピックルボールは、アメリカ発の急成長中のスポーツで、テニス・卓球・バドミントンの要素を組み合わせた新しい競技です。
+        バドミントンコートと同じ大きさのコートで、プラスチック製の穴あきボールをパドルで打ち合います。
+        シンプルなルールと適度な運動量で、年齢や体力を問わず誰でも楽しめるのが特徴。
+        特にシニア層にも人気が高く、家族や友人と気軽にプレーできるスポーツとして世界中で注目を集めています。
+        競技人口は年々増加し、プロリーグや大会も開催されるなど、スポーツ界での存在感を高めています。
+        </p>
+        <p className={styles.detailLinkWrapper}>
+        <a href="/what-is-pickleball" className={styles.detailLink}>詳細はこちら</a> 
         </p>
       </section>
 
@@ -65,7 +82,17 @@ export default function Home({ posts }) {
           </ul>
         </div>
       </section>
-
+      {/* イベント開催 */}
+      <section className={styles.flowSection}>
+        <h2 className={styles.flowTitle}>イベント開催</h2>
+        <p>
+        当社では、ピックルボールを通じた交流や地域活性化を目的とした各種イベントの企画・運営を行っております。
+        初心者から上級者まで楽しめる体験会・ミニ大会・企業交流イベントなど、ニーズに応じた柔軟なプランをご用意しています。
+        </p>
+        <p className={styles.detailLinkWrapper}>
+        <a href="/event" className={styles.detailLink}>詳細はこちら</a> 
+        </p>
+      </section>
       {/*
       参加の流れ 
       <section className={styles.flowSection}>
@@ -85,7 +112,8 @@ export default function Home({ posts }) {
           </div>
         </div>
       </section>*/}
-
+      <Posts posts={posts} />
+      <Pagination nextUrl="/event" nextText="More Posts" />
       {/* <Posts posts={posts} />
       <Pagination nextUrl="/event" nextText="More Posts" />*/}
     </Container>

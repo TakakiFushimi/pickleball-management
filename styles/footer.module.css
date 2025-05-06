@@ -1,6 +1,6 @@
 .wrapper {
     padding: var(--space-xl) 0;
-    background: #0a0a09;
+    background: var(--orange);
     /*background-color: var(--gray-10);*/
 }
 

@@ -34,7 +34,7 @@
   
   /* サービスタイトル */
   .serviceTitle {
-    color: #fff;
+    
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 12px;
@@ -43,7 +43,6 @@
   /* サービス説明 */
   .serviceDescription {
     font-size: 1rem;
-    color: #ddd;
     margin-bottom: 16px;
   }
   
@@ -85,7 +84,7 @@
   }
   
   .flowStep {
-    background-color: #fff;
+    
     padding: 16px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -110,3 +109,19 @@
   .serviceButton:hover {
     background: #00a3a3;
   }
+
+
+  .detailLinkWrapper {
+    text-align: right;
+  }
+  
+  .detailLink {
+    color: var(--accentsub); /* 通常時の色 */
+    text-decoration: underline;
+    transition: color 0.2s ease;
+  }
+  
+  .detailLink:hover {
+    color: var(--text); /* ホバー時の色 */
+  }
+  

@@ -1,9 +1,11 @@
 .basic {
+    fill: var(--text);
     width: 350px;
     padding: 0em 0em 0em 0em;
 }
 
 .box2 {
+    fill: var(--text);
     width: 350px;
     padding: 1em 2em 1em 0em;
     text-align: left;
@@ -12,13 +14,14 @@
 }
 
 @media (max-width: 768px) {
-    .basic {        
+    .basic {
+        fill: var(--text);        
         padding: 0em 0em 0em 0em;
         max-width: 180px; /* 最大幅を指定 */
         max-height: 90px; /* 最大高さを指定 */
     }
     .box2 {
-      
+        fill: var(--text);
         padding: 1em 2em 1em 0em;        
         max-width: 180px; /* 最大幅を指定 */
         max-height: 90px; /* 最大高さを指定 */

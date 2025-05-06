@@ -37,13 +37,13 @@ export default function Nav() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/what-is-pickleball" onClick={closeNav}>
-                        サービス
+                    <Link href="/about-us" onClick={closeNav}>
+                        私たちについて
                     </Link>
                 </li>
                 <li>
-                    <Link href="/about-us" onClick={closeNav}>
-                        私たちについて
+                    <Link href="/event" onClick={closeNav}>
+                        イベント
                     </Link>
                 </li>
                 <li>
