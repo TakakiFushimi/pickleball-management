@@ -113,7 +113,7 @@ export default function Home({ posts }) {
         </div>
       </section>*/}
       <Posts posts={posts} />
-      <Pagination nextUrl="/event" nextText="More Posts" />
+      <Pagination nextUrl="/blog" nextText="More Posts" />
       {/* <Posts posts={posts} />
       <Pagination nextUrl="/event" nextText="More Posts" />*/}
     </Container>
@@ -122,7 +122,7 @@ export default function Home({ posts }) {
 /*
    複数行コメント
    囲まれている範囲がコードとして評価されない
- */
+*/
 export async function getStaticProps() {
   const posts = await getAllPosts(4)
 
