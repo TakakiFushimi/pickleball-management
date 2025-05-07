@@ -19,7 +19,7 @@ export default function Home({ posts }) {
       <Meta />
 
       <Hero 
-        title="Tokyo Pickleball Management" 
+        title="Tokyo Pickleball" 
         subtitle="　" 
         sentence="私たちの使命は、ピックルボールの普及と認知度の向上に努めることです。より多くのコートを設置し、コミュニティイベントを開催することで、あらゆる年齢や技術レベルのプレーヤーが楽しみ、上達できる環境を提供いたします。" 
         isHomePage
@@ -93,7 +93,15 @@ export default function Home({ posts }) {
         <a href="/event" className={styles.detailLink}>詳細はこちら</a> 
         </p>
       </section>
-      {/*
+      
+    </Container>
+  )
+}
+/*
+   複数行コメント
+   囲まれている範囲がコードとして評価されない
+*/
+{/*
       参加の流れ 
       <section className={styles.flowSection}>
         <h2 className={styles.flowTitle}>ご利用の流れ</h2>
@@ -112,17 +120,10 @@ export default function Home({ posts }) {
           </div>
         </div>
       </section>*/}
-      <Posts posts={posts} />
-      <Pagination nextUrl="/blog" nextText="More Posts" />
-      {/* <Posts posts={posts} />
+      
+      {/*<Posts posts={posts} />
+      <Pagination nextUrl="/blog" nextText="More Posts" /> <Posts posts={posts} />
       <Pagination nextUrl="/event" nextText="More Posts" />*/}
-    </Container>
-  )
-}
-/*
-   複数行コメント
-   囲まれている範囲がコードとして評価されない
-*/
 export async function getStaticProps() {
   const posts = await getAllPosts(4)
 
