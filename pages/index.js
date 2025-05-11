@@ -5,7 +5,7 @@ import Hero from 'components/hero'
 import Posts from 'components/posts'
 import Pagination from 'components/pagination'
 import { getPlaiceholder } from 'plaiceholder'
-import styles from 'styles/Home.module.css' // CSSファイルをインポート
+import styles from 'styles/home.module.css' // CSSファイルをインポート
 
 //import { posts as localPosts } from 'pages/data/posts' // ローカルのpostsデータをインポート
 
