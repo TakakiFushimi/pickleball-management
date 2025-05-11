@@ -42,3 +42,9 @@ status = 200
 [build.environment]
   YARN_FLAGS = "--ignore-engines"
 
+[build]
+  command = "npm install sharp --platform=linux --arch=x64 && npm run build"
+  publish = ".next"
+  environment = {
+    LD_LIBRARY_PATH = "/opt/build/repo/node_modules/sharp/vendor/lib:/opt/buildhome/.linuxbrew/lib"
+  }
