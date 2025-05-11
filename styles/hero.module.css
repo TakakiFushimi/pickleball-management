@@ -14,19 +14,21 @@
     color: var(--white);
 }
 .text {
-    max-width: 97%; /* コンテナ内での最大幅を指定 */
+    max-width: 95%; /* コンテナ内での最大幅を指定 */
     padding-top: calc(var(--display) * 0.7);
     padding-bottom: calc(var(--display) * 0.2);
     padding-left: calc(var(--display) * 0.2);
+    
 }
 
 .Hometitle {
-    font-size: clamp(3rem, 1.5vw + 2rem, var(--display));
+    font-size: clamp(3rem, 1.5vw + 2rem, var(--homedisplay));
     font-weight: 900;
-    letter-spacing: 0.15em;
-    max-width: 100%; /* 最大幅を100%に設定 */
+    max-width: 90%;
+    
     padding-top: calc(var(--display) * 0.3);
 }
+
 .title {
     font-size: var(--heading1);
     font-weight: 900;

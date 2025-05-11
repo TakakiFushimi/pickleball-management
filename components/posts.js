@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Posts({ posts }) {
   return (
     <div className={styles.post}>
-      <h2>【イベント】</h2>
+      
       <div className={styles.gridContainer}>
         {posts.map(({ title, slug, eyecatch }) => (
           <article className={styles.post} key={slug}>

@@ -12,8 +12,8 @@ import { getImageBuffer } from 'lib/getImageBuffer'
 export default function Blog({ posts }) {
     return (
     <Container>
-        <Meta pageTitle="ブログ" pageDesc="ブログの記事一覧" />
-        <Hero title="Blog" subtitle="Recent Posts" />
+        <Meta pageTitle="イベント情報" pageDesc="イベントの記事一覧" />
+        <Hero title="イベント" subtitle="当社では、ピックルボールを通じた交流や地域活性化を目的とした各種イベントの企画・運営を行っております。" />
 
         <Posts posts={posts} />
     </Container>
