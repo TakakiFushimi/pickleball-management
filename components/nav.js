@@ -42,6 +42,11 @@ export default function Nav() {
                     </Link>
                 </li>
                 <li>
+                    <Link href="/https://reserva.be/pickle" onClick={closeNav}>
+                        予約
+                    </Link>
+                </li>
+                <li>
                     <Link href="/blog" onClick={closeNav}>
                         イベント
                     </Link>

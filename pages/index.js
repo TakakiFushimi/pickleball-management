@@ -66,6 +66,9 @@ export default function Home({ posts }) {
           <li>定期的なクラブ交流会</li>
           <li>健康維持を目的としたプレイセッション</li>
         </ul>
+        <p className={styles.detailLinkWrapper}>
+      <a href="/https://reserva.be/pickle" className={styles.detailLink}>ご予約はこちら</a> 
+      </p>
       </div>
 
       {/* 法人向けサービス */}
